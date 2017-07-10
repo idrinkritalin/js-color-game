@@ -47,11 +47,38 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
     background-color: #232323;
+    font-family: 'Roboto', sans-serif;
 }
 
-#container {
+h1 {
+    color: white;
+    background-color: #E54D42;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+}
+
+#colorDisplay {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#message {
+    color: black;
+    font-weight: 300;
+}
+
+#stripe {
+    background-color: #F1F1F1;
+    text-align: center;
+    height: 30px;
+}
+
+#colorContainer {
     width: 60%;
     margin: 0 auto;
 }
@@ -62,5 +89,4 @@ body {
     width: 30%;
     padding-bottom: 120px;
     margin: 1.5%;
-    background: purple;
 }
