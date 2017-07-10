@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#fork {position: absolute; top: 0; left: 0; border: 0;}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: #232323;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #D94813;
+}
+
+h1 {
+    color: white;
+    padding: 10px 0 10px 0;
+    background-color: #D94813;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#colorDisplay {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#message {
+    color: black;
+    font-weight: 200;
+    display: inline-block;
+    width: 20%;
+    color: #D94813;
+}
+
+#stripe {
+    background-color: #F1F1F1;
+    text-align: center;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+#colorContainer {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.square {
+    border-radius: 15px;
+    float: left;
+    width: 30%;
+    padding-bottom: 150px;
+    margin: 1.5%;
+    transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+}
+
+.selected {
+    background-color: #D94813;
+    color: white;
+}
+
+button {
+    background-color: #F1F1F1;
+    border: none;
+    font-size: 11px;
+    font-weight: 200;
+    height: 100%;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
+    transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #D94813;
+    color: white;
+}
+
+footer {
+    clear: both;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .square {
+    border-radius: 5px;
+    float: left;
+    width: 45%;
+    padding-bottom: 120px;
+    margin: 2.5%;
+   }
+    
+   #colorContainer {
+    width: 80%;
+    margin: 0 auto;
+   }
+    
+   #fork {display: none !important;}
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+  .square {
+    margin: 1.5%;
+   }
+    
+   #colorContainer {
+    width: 80%;
+   }
+}
